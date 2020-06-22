@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="home.js" ></script>
+    <title>Dhagla Baaji</title>
+</head>
+<body>
+    <div class="welcome">
+        <h2>Hey Welcome to the Dhagla Baaji.</h2>
+    </div>
+
+    <div class="main-container">
+        <div class="main-container">
+            <div class="flex-dhagla-baaji-row-0">
+            <h2>Dhagla Baaji</h2>
+            <h2><span id="dhagla-baaji-result"> Lets play.</span></h2>
+            </div>
+        <div class="flex-dhagla-baaji-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-dhagla-baaji-result">0</span></h2>
+                <img id="your-card" src="Images/0.png">
+                
+            </div>
+            <div id="middle-box">
+                <h2> Middle: <span id="middle-dhagla-baaji-result">0</span></h2>
+                <img id="middle-card" src="Images/0.png">
+                
+            </div>
+            <div id="opposite-box">
+                <h2> Opposite: <span id="opposite-dhagla-baaji-result">0</span></h2>
+                <img id="opposite-card" src="Images/0.png">
+                
+            </div>
+            
+        </div>
+        <div class="flex-dhagla-baaji-row-2">
+            <div id="your-box-button">
+                <button class="player-1" onclick="turn1()">Turn</button>
+                <button id="done1" class="player-1" onclick="done1()">Done</button>
+            </div>
+            <div id="middle-box-button">
+                <button class="start" onclick="start()">Start</button>
+                <button class="end" onclick="end()">End</button>
+            </div>
+            <div id="oppose-box-button">
+                <button class="player-2" onclick="turn2()">Turn</button>
+                <button id="done2" class="player-2" onclick="done2()">Done</button>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

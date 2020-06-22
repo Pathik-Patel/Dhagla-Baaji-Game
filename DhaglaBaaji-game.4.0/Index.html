@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaglabaaji</title>
+    <style>
+    body{
+        background-image: url("images/backgrounds.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .container{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    button{
+        width: 100px;
+        height: 35px;
+        background-color: rgb(41, 41, 255);
+        color: white;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width:600px){
+        p{
+            font-size: 13px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>How to Play Dhaglabaaji</h1>
+        <p>
+            1. This is a game between player 1 and player 2.<br><br>
+            2. In this game both players get 26 cards initially.<br><br>
+            3. Now player 1 put one random card in the middle.<br><br>
+            4. Then player 2 will put one card in middle and if both card has same value then
+            All the middle cards are will be given to player 2.<br><br>
+            5. Here same value means 2,2  j,j  k,k like this.if you put k and
+            playre 2's card is also k then this is the match.<br><br>
+            6. If player 2 does not get match then again your turn and this will
+            be continue till there is a match.<br><br>
+            7. If one of the player has no card and in middle there is some cards then middle 
+            cards will be given to both player equally<br><br>
+            8. If any player has no card and in middle also no card is available then other player will
+            win the match.<br><br>
+            9. Here when you click start button it will give 26 cards to both.
+            Then when you click turn, your card will be given to you and by clicking done
+            button you are putting that card in middle.<br><br>
+            10. If you get the match then turn will be again yours.  <br><br>
+        </p>
+
+        <button onclick="start()">Let's Start</button>
+    </div>
+    <script>
+        function start(){
+            window.open("main.html","_self");
+        }
+    </script>
+</body>
+</html>
